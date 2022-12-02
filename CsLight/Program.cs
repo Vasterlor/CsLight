@@ -19,15 +19,7 @@ namespace CsLight
             
             Console.Write("Введите уровень заточки от 1 до 12: ");
             a = Convert.ToInt32(Console.ReadLine());
-            // if (a <= 3)
-            // {
-            //     Console.WriteLine("Поехали!");
-            // }
-            // else
-            // {
-            //     Console.WriteLine("Хорошая попытка! Но все же введите значение от 1 до 12");
-            // }
-            
+
             while (true)
             {
                 i = rand.Next(0, 2);
@@ -46,7 +38,6 @@ namespace CsLight
                 }
                 
             }
-            // Console.WriteLine("Для уровня заточки " + a + " нужно " + i + " миражей"); 
         }
     }
 }
