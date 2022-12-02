@@ -1,0 +1,6 @@
+C:\Users\kuzo\Documents\C# Light\CsLight\CsLight\bin\Debug\CsLight.exe
+C:\Users\kuzo\Documents\C# Light\CsLight\CsLight\bin\Debug\CsLight.pdb
+C:\Users\kuzo\Documents\C# Light\CsLight\CsLight\obj\Debug\CsLight.csproj.AssemblyReference.cache
+C:\Users\kuzo\Documents\C# Light\CsLight\CsLight\obj\Debug\CsLight.csproj.CoreCompileInputs.cache
+C:\Users\kuzo\Documents\C# Light\CsLight\CsLight\obj\Debug\CsLight.exe
+C:\Users\kuzo\Documents\C# Light\CsLight\CsLight\obj\Debug\CsLight.pdb
