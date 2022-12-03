@@ -11,7 +11,6 @@ namespace CsLight
             
             Console.WriteLine("Генератор заточки");
 
-
             Random rand = new Random();
             int i;
             int c = 0;
@@ -19,8 +18,9 @@ namespace CsLight
             
             Console.Write("Введите уровень заточки от 1 до 12: ");
             a = Convert.ToInt32(Console.ReadLine());
-
-            while (true)
+            if (a <= 12)
+            {
+                while (true)
             {
                 i = rand.Next(0, 2);
                 Console.WriteLine(i);
@@ -37,6 +37,11 @@ namespace CsLight
                     c = 0;
                 }
                 
+            }
+            }
+            else
+            {
+                Console.WriteLine("Хорошая попытка! Но все же введите значение от 1 до 12");
             }
         }
     }
