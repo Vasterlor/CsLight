@@ -7,37 +7,36 @@ namespace CsLight
     {
         public static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.GetEncoding (1251);
-            
+            Console.OutputEncoding = System.Text.Encoding.GetEncoding(1251);
+
             Console.WriteLine("Генератор заточки");
 
             Random rand = new Random();
             int i;
             int c = 0;
             int a;
-            
+
             Console.Write("Введите уровень заточки от 1 до 12: ");
             a = Convert.ToInt32(Console.ReadLine());
             if (a <= 12)
             {
                 while (true)
-            {
-                i = rand.Next(0, 2);
-                Console.WriteLine(i);
-                if (i == 1)
                 {
-                    c++;
-                    if ( c == a) 
+                    i = rand.Next(0, 2);
+                    Console.WriteLine(i);
+                    if (i == 1)
                     {
-                        break;
+                        c++;
+                        if (c == a)
+                        {
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        c = 0;
                     }
                 }
-                else
-                {
-                    c = 0;
-                }
-                
-            }
             }
             else
             {
