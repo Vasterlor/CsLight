@@ -10,35 +10,40 @@ namespace CsLight
             Console.OutputEncoding = System.Text.Encoding.GetEncoding(1251);
 
             Console.WriteLine("Генератор заточки");
-
-            Random rand = new Random();
-            int i;
-            int c = 0;
-            int level;
-
-            Console.Write("Введите уровень заточки от 1 до 12: ");
-            level = Convert.ToInt32(Console.ReadLine());
-            if (level <= 0 || level > 12)
+            while (true)
             {
-                Console.WriteLine("Введено некорректное значение. Пожалуйста, введите значение от 1 до 12!");
-            }
-            else
-            {
-                while (true)
+                Random rand = new Random();
+                int i;
+                int c = 0;
+                int level;
+
+                Console.Write("Введите уровень заточки от 1 до 12: ");
+                level = Convert.ToInt32(Console.ReadLine());
+                if (level <= 0 || level > 12)
                 {
-                    i = rand.Next(0, 2);
-                    Console.WriteLine(i);
-                    if (i == 1)
+                    Console.WriteLine("Введено некорректное значение. Пожалуйста, введите значение от 1 до 12!");
+                    Console.WriteLine("Повторить? y/n");
+                    if (Console.ReadKey(true).Key != ConsoleKey.Y)
+                        break;
+                }
+                else
+                {
+                    while (true)
                     {
-                        c++;
-                        if (c == level)
+                        i = rand.Next(0, 2);
+                        Console.WriteLine(i);
+                        if (i == 1)
                         {
-                            break;
+                            c++;
+                            if (c == level)
+                            {
+                                break;
+                            }
                         }
-                    }
-                    else
-                    {
-                        c = 0;
+                        else
+                        {
+                            c = 0;
+                        }
                     }
                 }
             }
