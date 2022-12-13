@@ -19,14 +19,7 @@ namespace CsLight
 
                 Console.Write("Введите уровень заточки от 1 до 12: ");
                 level = Convert.ToInt32(Console.ReadLine());
-                if (level <= 0 || level > 12)
-                {
-                    Console.WriteLine("Введено некорректное значение. Пожалуйста, введите значение от 1 до 12!");
-                    Console.WriteLine("Повторить? y/n");
-                    if (Console.ReadKey(true).Key != ConsoleKey.Y)
-                        break;
-                }
-                else
+                if (level >= 1 && level <= 12)
                 {
                     while (true)
                     {
@@ -45,6 +38,14 @@ namespace CsLight
                             c = 0;
                         }
                     }
+
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Введено некорректное значение. Пожалуйста, введите значение от 1 до 12!");
+                    Console.WriteLine("Повторить? y/n");
+                    if (Console.ReadKey(true).Key != ConsoleKey.Y) ;
                 }
             }
         }
