@@ -10,22 +10,25 @@ namespace CsLight
             Console.OutputEncoding = System.Text.Encoding.GetEncoding(1251);
 
             Console.WriteLine("Генератор заточки");
-            while (true)
+
+            int numberOfAttempts = 4; // Кількість спроб при неудачному вводі значення
+            for (int i = numberOfAttempts; i > 0; i--)
+
             {
                 Random rand = new Random();
-                int i;
+                int a;
                 int c = 0;
                 int level;
 
-                Console.Write("Введите уровень заточки от 1 до 12: ");
+                Console.Write("Введіть рівень заточки від 1 до 12: ");
                 level = Convert.ToInt32(Console.ReadLine());
                 if (level >= 1 && level <= 12)
                 {
                     while (true)
                     {
-                        i = rand.Next(0, 2);
-                        Console.WriteLine(i);
-                        if (i == 1)
+                        a = rand.Next(0, 2);
+                        Console.WriteLine(a);
+                        if (a == 1)
                         {
                             c++;
                             if (c == level)
@@ -43,9 +46,18 @@ namespace CsLight
                 }
                 else
                 {
-                    Console.WriteLine("Введено некорректное значение. Пожалуйста, введите значение от 1 до 12!");
-                    Console.WriteLine("Повторить? y/n");
-                    if (Console.ReadKey(true).Key != ConsoleKey.Y) ;
+                    Console.WriteLine(
+                        "Введено некоректне значення. Будь ласка, введіть значення від 1 до 12! \nУ Вас залишилось " +
+                        (i - 1) + " спроб ");
+                    if (i > 1)
+                    {
+                        Console.WriteLine("Повторити? y/n");
+                        if (Console.ReadKey(true).Key == ConsoleKey.Y) ;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Всі ми колись помиляємось");
+                    }
                 }
             }
         }
