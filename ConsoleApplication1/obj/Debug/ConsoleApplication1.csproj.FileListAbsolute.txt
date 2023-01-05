@@ -1,0 +1,6 @@
+C:\Users\kuzo\Documents\C# Light\CsLight\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\kuzo\Documents\C# Light\CsLight\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\kuzo\Documents\C# Light\CsLight\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\kuzo\Documents\C# Light\CsLight\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\kuzo\Documents\C# Light\CsLight\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\kuzo\Documents\C# Light\CsLight\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

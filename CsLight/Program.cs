@@ -51,8 +51,17 @@ namespace CsLight
                         (i - 1) + " спроб ");
                     if (i > 1)
                     {
-                        Console.WriteLine("Повторити? y/n");
-                        if (Console.ReadKey(true).Key == ConsoleKey.Y) ;
+                        Console.WriteLine("Повторити?\n1 - Так.\n2 - Ні.");
+                        switch (Convert.ToInt32(Console.ReadLine()))
+                        {
+                            case 1 :
+                                break;
+                            case 2 :
+                                i = 0;
+                                break;
+                        }
+                        // Console.ReadKey();
+                        // // if (Console.ReadKey(true).Key == ConsoleKey.Y) ;
                     }
                     else
                     {
